@@ -1,0 +1,108 @@
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.App {
+  background: white;
+  padding: 20px;
+  width: 500px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.4);
+  font-family: Verdana;
+  animation: fadein 300ms ease-in-out;
+  position: relative;
+}
+
+.App form {
+  margin: auto;
+  margin-bottom: 55px;
+  width: max-content;
+  font-family: Verdana;
+}
+
+.App .header {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  font-family: Verdana;
+}
+
+.App .subheader {
+  font-family: Verdana;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.App input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-family: Verdana;
+  background: rgba(0, 0, 0, 0.05);
+  transition: ease-in-out 250ms;
+}
+
+.App input:hover,
+.App input:focus {
+  border: 1px solid darkcyan;
+}
+
+.App button {
+  font-size: 14px;
+  padding: 11px;
+  background: darkcyan;
+  border: none;
+  margin-left: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  font-family: Verdana;
+  transition: ease-in-out 250ms;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.App button:hover {
+  opacity: 1;
+}
+
+.App .author {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 9px;
+  margin: 0px 30px 20px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  opacity: 0.9;
+}
+
+.App a {
+  color: darkcyan;
+  font-weight: bold;
+}
